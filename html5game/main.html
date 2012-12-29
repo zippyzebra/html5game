@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+		<title>游戏Demo</title>
+		<meta charset="utf-8">
+		
+		<meta name="title" content="Game" />
+		<meta name="description" content="Game for Demo" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+		<link href="./main.css" rel="stylesheet" media="screen" />
+
+		
+    </head>
+	
+    <body id="game">
+		<div id="status" class="ui">
+		</div>
+		
+		<div id="panels">
+			<div id="message" class="ui">
+				<h2 id="title">游戏介绍</h2>
+				<div class="manualnumber">
+					<div><span class="outdent">1.</span><p>保护母体不被毁坏 ( Protect the Sun )</p></div>
+					<div><span class="outdent">2.</span><p>点击屏幕一点，卫星释放子弹到该点 ( Click to fire the Bullets )</p></div>
+					<div><span class="outdent">3.</span><p>点击[空格键]，改变卫星绕行方向 ( Press [Space] to reverse the Defender Orbit )  </p></div>
+				</div>
+				<div id="startButton">开始游戏！( Start the Game ! ) </div>
+			</div>
+		</div>
+		
+		<canvas id="world">
+			<p class="no-canvas">
+				请使用Chrome<a href="http://www.google.com/chrome">新版本浏览器</a>.
+			</p>
+		</canvas>
+		<canvas id="background"></canvas>
+		
+		<script src="./Js/gameLogic.js"></script>
+    </body>
+</html>
